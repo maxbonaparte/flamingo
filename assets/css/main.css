@@ -10,6 +10,7 @@
 
 /* Reset */
 
+/* Group of element selectors*/
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -59,6 +60,7 @@
 
 /* Containers */
 
+/*class selector (.container)*/
 	.container {
 		margin-left: auto;
 		margin-right: auto;
@@ -474,8 +476,12 @@
 		margin-left: 8.33333%;
 	}
 
-	@media screen and (max-width: 1680px) {
 
+
+	@media screen and (max-width: 1680px) {
+	/*
+	this changes the properties for when the browser window (screen) is 1680px (max-width) or less
+	*/
 		.row > * {
 			padding: 0 0 0 2em;
 		}
@@ -1585,7 +1591,7 @@
 /* Type */
 
 	body {
-		background-color: rgb(76, 121, 167);
+		background-color: #020B14;
 		color: #c0c2c4;
 	}
 
