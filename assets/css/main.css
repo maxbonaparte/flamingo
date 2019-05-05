@@ -3372,6 +3372,7 @@
 		padding-top: 3.125em;
 	}
 
+	/*id selctor*/
 	#header {
 		background: rgba(4, 22, 37, 0.75);
 		color: #c0c5c9;
@@ -3385,7 +3386,7 @@
 		width: 100%;
 		z-index: 10001;
 	}
-
+		/*Pink by Longstreet1*/
 		#header > h1 {
 			color: #ffffff;
 			display: inline-block;
@@ -3716,7 +3717,8 @@
 			z-index: 1;
 		}
 
-		@media screen and (max-width: 1280px) {
+		/*cut off width when the video is not played anymore*/
+		@media screen and (max-width: 480px) {
 
 			#banner video {
 				display: none;
