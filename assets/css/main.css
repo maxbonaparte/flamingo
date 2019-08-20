@@ -55,10 +55,15 @@
 	*, *:before, *:after {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
+		/*box-sizing: border-box means it interprets the box width until the box-border 
+		(instead of content).
+		Box sizing is NOT inherited. UNLESS we use STAR (*) like here, which applies to all css-elements*/
 		box-sizing: border-box;
 	}
 
 /* Containers */
+
+/*start with base styles, then do the media / device specific css setting (@media)*/
 
 /*class selector (.container)*/
 	.container {
@@ -480,7 +485,7 @@
 
 	@media screen and (max-width: 1680px) {
 	/*
-	this changes the properties for when the browser window (screen) is 1680px (max-width) or less
+	this changes the properties for when the browser window (screen) is less than 1680px (max-width) or less
 	*/
 		.row > * {
 			padding: 0 0 0 2em;
@@ -1568,12 +1573,14 @@
 	@media screen and (max-width: 480px) {
 
 		html, body {
+			/*Pixels are considered an absolute unit (in a high res. screen pixels are multiple pixels on the screen)*/
 			min-width: 320px;
 		}
 
 	}
 
 	body {
+		/*color coding in hexadecimal numbers*/
 		background: #020B13;
 	}
 
@@ -1961,7 +1968,7 @@
 		.button:hover {
 			background-color: #06243c;
 		}
-
+		/* button:active -> active is a "pseudo-class selector" (in this case if you click an elemt)*/
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
@@ -2639,7 +2646,7 @@
 	section.special, article.special {
 		text-align: center;
 	}
-
+/*descendant selector (every p that is inside a header)*/
 	header p {
 		position: relative;
 		margin: 0 0 1.5em 0;
@@ -3374,7 +3381,7 @@
 
 	/*id selctor*/
 	#header {
-		background: rgba(4, 22, 37, 0.75);
+		background: rgba(4, 22, 37, 0.6); /*rgba = red, green, blue, alpha (transparency)*/
 		color: #c0c5c9;
 		cursor: default;
 		height: 3.25em;
