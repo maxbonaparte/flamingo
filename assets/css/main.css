@@ -1,6 +1,9 @@
 @charset "UTF-8";
+/*font awesome is used for the icons:*/
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Signika:300,700");
+/*Google fonts and apis are used for the actual fonts:*/
+/*@import url("https://fonts.googleapis.com/css?family=Signika:300,700");*/
+@import url('https://fonts.googleapis.com/css?family=Anton|Lexend+Deca|Lexend+Zetta|Bungee+Shade&display=swap');
 
 /*
 	Broadcast by TEMPLATED
@@ -1603,7 +1606,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Signika", sans-serif;
+		font-family: "Lexend Zetta", sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1673,6 +1676,7 @@
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
+		/*font-size: 2.5em; /*means 2.5 times larger?*/
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1681,7 +1685,7 @@
 		}
 
 	h2 {
-		font-size: 2.5em;
+		font-size: 2.5em; /*means 2.5 times larger?*/
 	}
 
 		@media screen and (max-width: 736px) {
@@ -1702,6 +1706,7 @@
 
 	h3 {
 		font-size: 1.75em;
+		font-family: "Bungee Shade", sans-serif;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -1743,37 +1748,6 @@
 		position: relative;
 		top: -0.5em;
 	}
-
-	blockquote {
-		border-left: solid 4px;
-		font-style: italic;
-		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
-	}
-
-	code {
-		border-radius: 4px;
-		border: solid 1px;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
-	}
-
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0 2em 0;
-	}
-
-		pre code {
-			display: block;
-			line-height: 1.75;
-			padding: 1em 1.5em;
-			overflow-x: auto;
-		}
-
 	hr {
 		border: 0;
 		border-bottom: solid 1px;
@@ -2136,8 +2110,11 @@
 
 		}
 
+
 /* Form */
 
+/*as no "Form" is used in the html doc as of now, this part is commented out:*/
+/*
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -2186,7 +2163,7 @@
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: Signika, cursive;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2250,7 +2227,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: Signika, cursive;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -2373,6 +2350,7 @@
 	.formerize-placeholder {
 		color: #676d71 !important;
 	}
+/*
 
 /* Icon */
 
@@ -3392,6 +3370,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 10001;
+		font-family: "Lexend Zetta", cursive;
 	}
 		/*Pink by Longstreet1*/
 		#header > h1 {
@@ -3408,15 +3387,17 @@
 
 			#header > h1 a {
 				font-size: 1.25em;
+				font-family: "Bungee Shade", cursive;
 			}
 
 				#header > h1 a:hover {
 					color: #ffffff;
 				}
-
+			/*For a <span> tag under a <h1> tag within a #header id-selector*/
 			#header > h1 span {
 				font-weight: 300;
-				font-size: .8em;
+				font-size: 0.8em;
+				font-family: 'Lexend Zetta', sans-serif;
 			}
 
 		#header > a {
@@ -3443,7 +3424,7 @@
 					content: "";
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
+					font-family: FontAwesome;  /*needed for the 'Burger' Symbol of the menue'*/
 					font-style: normal;
 					font-weight: normal;
 					text-transform: none !important;
@@ -3588,12 +3569,12 @@
 			vertical-align: middle;
 			width: 7em;
 		}
-
+			
 			#menu .close:before {
 				content: "";
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: FontAwesome; /*Needed to show the 'x' symbol to close the menue*/
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -3679,8 +3660,9 @@
 		}
 
 		#banner h1 {
-			font-size: 4em;
+			font-size: 6em;
 			margin-bottom: .25em;
+			font-family: "Bungee Shade", sans-serif;
 		}
 
 		#banner p {
@@ -3746,7 +3728,7 @@
 				}
 
 				#banner h1 {
-					font-size: 1.75em;
+					font-size: 2.5em;
 					margin-bottom: 0.5em;
 					padding-bottom: 0;
 				}
