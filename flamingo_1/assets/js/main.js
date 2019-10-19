@@ -14,6 +14,8 @@
 		xsmall:	'(max-width: 480px)'
 	});
 
+	//this is identical to: $(document).ready(function(){ ... }
+	//which prevents the jQuery code from running before the document is finished loading (is ready).
 	$(function() {
 
 		var	$window = $(window),
@@ -83,9 +85,13 @@
 					}
 
 				// Video check.
+					//$banner = $('#banner'); Selects an html element with the id="banner"
+					//the .data() method stores a value from the banner element, here:
+					// "images/banner"
 					var video = $banner.data('video');
 
 					if (video)
+						//
 						$window.on('load.banner', function() {
 
 							// Disable banner load event (so it doesn't fire again).
